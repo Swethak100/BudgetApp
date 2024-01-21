@@ -28,4 +28,8 @@ public class UserService {
 
         userRepository.saveAll(userList);
     }
+
+    public List<User> getUsers() {
+       return userRepository.findAll();
+    }
 }

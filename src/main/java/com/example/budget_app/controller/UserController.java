@@ -1,13 +1,11 @@
 package com.example.budget_app.controller;
 
 import com.example.budget_app.dto.UserDto;
+import com.example.budget_app.model.User;
 import com.example.budget_app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,6 +20,11 @@ public class UserController {
 
             userService.addUsers(userDTOList);
             return ResponseEntity.ok("Users added successfully");
+    }
 
+    @GetMapping("/getUsers")
+    public ResponseEntity<List<User>> getAllUsers() {
+        List<User> users = userService.getUsers();
+        return ResponseEntity.ok(users);
     }
 }
