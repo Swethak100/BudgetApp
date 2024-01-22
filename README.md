@@ -19,16 +19,16 @@ api/income/halfyearly-to get user's income details for six months in total by gi
 
 api/income/yearly-to get user's income details for a year in total by giving user id as RequestParam
 
-api/expense/addExpens-to add expense details of a person with their user id as RequestParam
+api/expenses/addExpense-to add expense details of a person with their user id as RequestParam
 
-api/expense/getTransactions/{userId}-to retrieve all expense transactions of a user
+api/expenses/getTransactions/{userId}-to retrieve all expense transactions of a user
 
-api/expense/monthly-to get user's expense details monthwise in total by giving user id as RequestParam
+api/expenses/monthly-to get user's expense details monthwise in total by giving user id as RequestParam
 
-api/expense/quarterly-to get user's expense details for three months in total by giving user id as RequestParam
+api/expenses/quarterly-to get user's expense details for three months in total by giving user id as RequestParam
 
-api/expense/halfyearly-to get user's expense details for six months in total by giving user id as RequestParam
+api/expenses/halfyearly-to get user's expense details for six months in total by giving user id as RequestParam
 
-api/expense/yearly-to get user's expense details for a year in total by giving user id as RequestParam
+api/expenses/yearly-to get user's expense details for a year in total by giving user id as RequestParam
 
 
