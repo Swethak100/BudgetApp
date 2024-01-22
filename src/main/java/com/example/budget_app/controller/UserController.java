@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins ="http://localhost:4200")
 @RequestMapping("/api/budget")
 public class UserController {
-    @Autowired
-    private UserService userService;
+
+
+@Autowired
+private UserService userService;
 
     @PostMapping("/addUsers")
     public ResponseEntity<String> addUsers(@RequestBody List<UserDto> userDTOList) {
